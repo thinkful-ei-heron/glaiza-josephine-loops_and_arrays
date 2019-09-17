@@ -1,4 +1,5 @@
 /* eslint-disable strict */
+//Max and Min
 function max(numbers) {
   let i = 0;
   let maxNum = 0;
@@ -28,3 +29,15 @@ function min(numbers) {
   }
   return minNum;
 }
+
+//Average
+
+function average(numbers) {
+  let totalNum = 0;
+  numbers.forEach(function(el) {
+    totalNum += el;
+  });
+  return totalNum/numbers.length;
+}
+
+average([4,5,6]);
