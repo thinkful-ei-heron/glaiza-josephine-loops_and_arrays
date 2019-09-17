@@ -70,3 +70,14 @@ rocksWarning(`USA`);
 rocksWarning(`LA`);
 rainWarning('LA');
 windWarning('Arizoa');
+
+const turtle = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+const noNeg = turtle.filter(arr => arr[0] > -1 && arr[1] > -1)
+console.log(noNeg)
+
+const addNum = noNeg.map(arr => arr[0]+arr[1])
+console.log(addNum);
+
+const movements = addNum.forEach((el,i) => console.log(`Movement #${++i}: ${el} steps`))
+console.log(movements);
